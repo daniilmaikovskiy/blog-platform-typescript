@@ -1,0 +1,106 @@
+.wrapper {
+  width: 941px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 2px #ccc;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.firstVisible {
+  display: flex;
+  min-height: 140px;
+  padding: 16px 0;
+}
+
+.main {
+  width: 70%;
+  height: auto;
+}
+
+.authorBlock {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  height: auto;
+}
+
+.authorBlockText {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.author {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: -5px;
+}
+
+.date {
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.titleBlock {
+  display: flex;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 28px;
+  color: #1890ff;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.likeBlock {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-left: 12px;
+  cursor: pointer;
+
+  &:focus {
+    border: 1px dashed #ccc;
+  }
+}
+
+.likeNumber {
+  margin-left: 6px;
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.tag {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 3px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.tagBlock {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  min-height: 20px;
+}

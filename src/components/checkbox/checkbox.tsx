@@ -2,7 +2,7 @@ import React, { forwardRef, HTMLProps, Ref, Key } from 'react';
 import classes from './checkbox.module.scss';
 
 export interface Props extends HTMLProps<HTMLInputElement> {
-  className: string;
+  className?: string;
   ref: Ref<HTMLInputElement>;
   key?: Key;
 }

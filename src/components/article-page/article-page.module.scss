@@ -1,0 +1,136 @@
+.wrapper {
+  width: 941px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 2px #ccc;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  margin-top: 24px;
+  margin-bottom: 70px;
+}
+
+.firstVisible {
+  display: flex;
+  min-height: 140px;
+  padding: 16px 0;
+}
+
+.body {
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.main {
+  width: 70%;
+  height: auto;
+}
+
+.authorBlock {
+  display: flex;
+  justify-content: flex-end;
+  height: auto;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: auto;
+  margin-top: 30px;
+}
+
+.button {
+  width: 78px;
+  height: 31px;
+}
+
+.delete {
+  @extend .button;
+  border-color: #f5222d;
+  color: #f5222d;
+  margin-right: 12px;
+  &:hover,
+  &:focus {
+    background: #f5222d;
+  }
+}
+
+.edit {
+  @extend .button;
+  width: 65px;
+  border-color: #52c41a;
+  color: #52c41a;
+  &:hover,
+  &:focus {
+    background: #52c41a;
+  }
+}
+
+.sideBlock {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  width: 30%;
+  height: auto;
+}
+
+.authorBlockText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.author {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: -5px;
+}
+
+.date {
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.titleBlock {
+  display: flex;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 28px;
+  color: #1890ff;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.tag {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 3px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.tagBlock {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.hidden {
+  display: none;
+}

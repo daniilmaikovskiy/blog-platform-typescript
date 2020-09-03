@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.tag {
+  width: 300px;
+}
+
+.btn {
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 16px;
+}
+
+.delete {
+  @extend .btn;
+
+  color: #f5222d;
+  border-color: #f5222d;
+  &:hover,
+  &:focus {
+    background-color: #f5222d;
+  }
+}

@@ -1,0 +1,23 @@
+.wrapper {
+  display: block;
+  margin-left: 25px;
+  border: 1px dotted transparent;
+
+  & span {
+    transition: all 0.5s ease;
+    margin-right: 12px;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  &:hover,
+  &:focus {
+    span {
+      color: #1890ff;
+    }
+  }
+  &:focus {
+    border-color: #1890ff;
+    border-radius: 5px;
+  }
+}

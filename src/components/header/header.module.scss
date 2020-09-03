@@ -1,0 +1,76 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+
+%btn {
+  min-width: 109px;
+  min-height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+
+  &:hover,
+  &:focus {
+    color: #1890ff;
+  }
+}
+
+.homelink {
+  @extend %btn;
+  margin-left: 22px;
+}
+
+.signIn {
+  @extend %btn;
+  margin-left: auto;
+  margin-right: 22px;
+}
+
+.signUp {
+  @extend %btn;
+  border: 1px solid #52c41a;
+  border-radius: 5px;
+  color: #52c41a;
+  margin-right: 22px;
+  background: #fff;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: #1890ff;
+  }
+}
+
+.logOut {
+  @extend .signUp;
+
+  margin-right: 22px;
+  margin-left: 27px;
+  border-color: rgba(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.75);
+  outline: none;
+}
+
+.wrapper .createArticle {
+  color: #52c41a;
+  border-color: #52c41a;
+  &:hover,
+  &:focus {
+    background-color: #52c41a;
+  }
+}
+
+.createArticleLink {
+  margin-left: auto;
+}
+
+.hidden {
+  display: none;
+}
