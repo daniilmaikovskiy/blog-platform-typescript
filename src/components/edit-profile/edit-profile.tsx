@@ -36,7 +36,7 @@ const EditProfile = () => {
   const passwordClasses = [classes.textInput];
   const imageClasses = [classes.textInput];
 
-  const errorMessages = Helper.getErrorMessages(errors);
+  const errorMessages = Helper.getErrorMessages(errors as Helper.Errors);
 
   const error = useSelector(selectors.usersEditingLoadingError);
   const errorMessage = useSelector(selectors.usersEditingErrorMessage);
