@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, RouteComponentProps } from 'react-router-dom';
 import classes from './app.module.scss';
 import Header from '../header';
 import Articles from '../articles';
@@ -12,6 +12,10 @@ import EditProfile from '../edit-profile';
 import actions from '../../actions';
 import CreateArticlePage from '../create-article-page';
 import EditArticlePage from '../edit-article-page';
+
+type Params = {
+  slug: string;
+};
 
 const App = () => {
   const dispatch = useDispatch();
@@ -32,11 +36,15 @@ const App = () => {
         <Route
           path={`${ROOT}/articles/:slug/`}
           exact
-          render={({ match }) => <ArticlePage slug={match.params.slug} />}
+          render={({ match }: RouteComponentProps<Params>) => (
+            <ArticlePage slug={match.params.slug} />
+          )}
         />
         <Route
           path={`${ROOT}/articles/:slug/edit`}
-          render={({ match }) => <EditArticlePage slug={match.params.slug} />}
+          render={({ match }: RouteComponentProps<Params>) => (
+            <EditArticlePage slug={match.params.slug} />
+          )}
         />
         <Route path={`${ROOT}/sign-up`} component={SignUp} />
         <Route path={`${ROOT}/sign-in`} component={SignIn} />

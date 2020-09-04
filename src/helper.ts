@@ -109,7 +109,7 @@ export const getErrorMessages = (errors: Errors) => {
     }
 
     throw new Error(`Unexpected value '${key}' with type '${el.type}' in getErrorMessages method`);
-  }, new Map());
+  }, new Map<string, string>());
 };
 
 export const formatDate = (dateObj: Date) =>
